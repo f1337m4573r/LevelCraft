@@ -1,0 +1,14 @@
+name: LevelCraftCore
+
+main: me.f1337.levelcraftcore.LevelCraftCore
+version: 0.1.0.0
+description: >
+             Commands for use with the Levelcraft experience-based plugin for Minecraft.
+
+commands:
+  level:
+    description: Returns information about a player's experience and levels.
+    usage:
+  lvl:
+    description: Returns information about a player's experience and levels.
+    usage:
