@@ -1,0 +1,7 @@
+name: LCFarming
+main: me.torrent.lcfarming.LCFarming
+version: 0.1
+description: >
+             LCFarming. The Farming Level for LevelCraftCore.
+commands:
+

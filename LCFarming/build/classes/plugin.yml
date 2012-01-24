@@ -1,0 +1,7 @@
+name: LCFarming
+main: me.f1337.lcfarming.LCFarming
+version: 0.1
+description: >
+             LCFarming. The Farming Level for LevelCraftCore.
+commands:
+

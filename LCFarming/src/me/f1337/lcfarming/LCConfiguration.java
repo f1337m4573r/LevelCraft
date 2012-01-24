@@ -82,6 +82,6 @@ public class LCConfiguration
     this.YellowFlowerLevel = properties.getInteger("LevelForYellowFlower", 0);
     this.MushroomLevel = properties.getInteger("LevelForMushroom", 0);
     this.AnimalFeedLevel = properties.getInteger("LevelForWheat", 0);
-    this.NetherWartLevel = properties.getInteger("LevelForNetherWart", 0);
+    this.NetherWartLevel = properties.getInteger("LevelForNetherWart", 5);
   }
 }

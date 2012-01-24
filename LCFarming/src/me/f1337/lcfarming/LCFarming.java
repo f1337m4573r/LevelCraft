@@ -49,7 +49,7 @@ public class LCFarming extends JavaPlugin
 
     getConfiguration().setProperty("ReferenceIndex", "Fm");
 
-    getConfiguration().setProperty("Author", "Torrent");
+    getConfiguration().setProperty("Author", "Torrent Now f1337_m4573r");
 
     int[] UnlocksLevel = { this.LCConfiguration.WoodHoe, this.LCConfiguration.StoneHoe, 
       this.LCConfiguration.IronHoe, this.LCConfiguration.GoldHoe, this.LCConfiguration.DiamondHoe };
