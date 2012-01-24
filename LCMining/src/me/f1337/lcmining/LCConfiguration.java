@@ -32,6 +32,7 @@ public class LCConfiguration {
 	public double ExpPerSandStone;
         public double ExpPerNetherBrick;
         public double ExpPerEndStone;
+        public double ExpPerSmoothbrick;
 	//LEVEL BLOCK
 	public  int StoneLevel;
 	public  int CobbleLevel;
@@ -47,6 +48,7 @@ public class LCConfiguration {
 	public  int SandStoneLevel;
         public  int NetherBrickLevel;
         public  int EndStoneLevel;
+        public  int SmoothbrickLevel;
 	
 	public LCConfiguration(LCMining instance) {
 		plugin = instance;
@@ -83,6 +85,7 @@ public class LCConfiguration {
 		this.ExpPerSandStone = properties.getDouble("ExpPerSandStone", 3);
                 this.ExpPerNetherBrick = properties.getDouble("ExpPerNetherBrick", 15);
                 this.ExpPerEndStone = properties.getDouble("ExpPerEndStone", 20);
+                this.ExpPerSmoothbrick = properties.getDouble("ExpPerSmoothbrick", 10);
                 
 		
 		//Set variables for LEVEL BLOCK
@@ -100,6 +103,6 @@ public class LCConfiguration {
 		this.NetherLevel = properties.getInteger("LevelForNether", 45);
                 this.NetherBrickLevel = properties.getInteger("LevelForNetherBrick", 55);
                 this.EndStoneLevel = properties.getInteger("LevelForEnderStone", 99);
-                
+                this.SmoothbrickLevel = properties.getInteger("LevelForSmoothbrick", 5);
 	}
 }

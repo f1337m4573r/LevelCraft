@@ -41,7 +41,8 @@ public class LCBlockListener extends BlockListener {
 				&& m != Material.SANDSTONE && m != Material.MOSSY_COBBLESTONE
 				&& m != Material.COAL_ORE && m != Material.LAPIS_ORE
 				&& m != Material.OBSIDIAN && m != Material.NETHERRACK
-                                && m != Material.NETHER_BRICK && m != Material.ENDER_STONE)
+                                && m != Material.NETHER_BRICK && m != Material.ENDER_STONE
+                                && m != Material.SMOOTH_BRICK)
 			return;
 		//Grab the current level of the player.
         int level = LevelFunctions.getLevel(player, plugin.thisPlug);
@@ -160,6 +161,11 @@ public class LCBlockListener extends BlockListener {
                                          + plugin.LCConfiguration.EndStoneLevel);
                         event.setCancelled(true);
                         return;
+                } else if   (level < plugin.LCConfiguration.SmoothbrickLevel
+                                  && m == Material.SMOOTH_BRICK)  {
+                        LCChat.warn(player,"Cannot mine this block. Required Level:"
+                                         + plugin.LCConfiguration.SmoothbrickLevel);
+                        event.setCancelled(true);
 		}
         //If the player managed to go through all that ^^. Do this:
 		//Start a double set at 0.
@@ -216,6 +222,7 @@ public class LCBlockListener extends BlockListener {
 		if (m == Material.SANDSTONE) {
 
 			gained = plugin.LCConfiguration.ExpPerSandStone;
+                }else
                 if (m == Material.NETHER_BRICK) {
                     
                         gained = plugin.LCConfiguration.ExpPerNetherBrick;
@@ -223,7 +230,10 @@ public class LCBlockListener extends BlockListener {
                 if (m == Material.ENDER_STONE) {
                     
                         gained = plugin.LCConfiguration.ExpPerEndStone;
-                }
+                }else
+                if (m == Material.SMOOTH_BRICK) {
+                    
+                        gained = plugin.LCConfiguration.ExpPerSmoothbrick;
 		}
 		//If they gained nothing. (Not really possible but hey.) Return.
 		if(gained==0) return;

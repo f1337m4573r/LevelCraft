@@ -73,7 +73,8 @@ public class LCMining extends JavaPlugin {
 				"Exp Per DiamondOre " + LCConfiguration.ExpPerDiamondOre,
 				"Exp Per Netherrack " + LCConfiguration.ExpPerNetherrack,
 				"Exp Per SandStone " + LCConfiguration.ExpPerSandStone, 
-                                "Exp Per NetherBrick " + LCConfiguration.ExpPerNetherBrick,};
+                                "Exp Per NetherBrick " + LCConfiguration.ExpPerNetherBrick,
+                                "Exp Per Smoothbrick " + LCConfiguration.ExpPerSmoothbrick,};
 		//Set the LevelExpPer to the Exp Array.
 		getConfiguration().setProperty("LevelExpPer", Exp);
 		//Set the LevelUnlocksLevel to the UnlocksLevel int array.
