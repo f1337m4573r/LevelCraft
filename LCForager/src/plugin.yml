@@ -1,0 +1,6 @@
+name: LCForager
+main: me.f1337.lcforager.LCForager
+version: 0.1
+description: >
+             LCMining. The Forager Level for LevelCraftCore.
+commands:

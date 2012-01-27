@@ -24,7 +24,6 @@ public class LCConfiguration
   public double ExpPerYellowFlower;
   public double ExpPerMushroom;
   public double ExpPerWheat;
-  public double ExpPerNetherWart;
   public int TillLevel;
   public int HarvestLevel;
   public int SugarCaneLevel;
@@ -36,7 +35,6 @@ public class LCConfiguration
   public int YellowFlowerLevel;
   public int MushroomLevel;
   public int AnimalFeedLevel;
-  public int NetherWartLevel;
 
   public LCConfiguration(LCFarming instance)
   {
@@ -69,7 +67,6 @@ public class LCConfiguration
     this.ExpPerYellowFlower = properties.getDouble ("ExpPerYellowFlower", 0.1D);
     this.ExpPerMushroom = properties.getDouble ("ExpPerMushroom", 0.1D);
     this.ExpPerWheat = properties.getDouble ("ExpPerWheat", 2.0D);
-    this.ExpPerNetherWart = properties.getDouble ("ExpPerNetherWart", 5.00D);
 
     this.TillLevel = properties.getInteger("LevelForTill", 0);
     this.HarvestLevel = properties.getInteger("LevelForHarvest", 0);
@@ -82,6 +79,5 @@ public class LCConfiguration
     this.YellowFlowerLevel = properties.getInteger("LevelForYellowFlower", 0);
     this.MushroomLevel = properties.getInteger("LevelForMushroom", 0);
     this.AnimalFeedLevel = properties.getInteger("LevelForWheat", 0);
-    this.NetherWartLevel = properties.getInteger("LevelForNetherWart", 5);
   }
 }

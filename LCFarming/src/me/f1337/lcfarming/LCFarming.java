@@ -49,7 +49,7 @@ public class LCFarming extends JavaPlugin
 
     getConfiguration().setProperty("ReferenceIndex", "Fm");
 
-    getConfiguration().setProperty("Author", "Torrent Now f1337_m4573r");
+    getConfiguration().setProperty("Author", "Torrent & f1337_m4573r");
 
     int[] UnlocksLevel = { this.LCConfiguration.WoodHoe, this.LCConfiguration.StoneHoe, 
       this.LCConfiguration.IronHoe, this.LCConfiguration.GoldHoe, this.LCConfiguration.DiamondHoe };
@@ -64,8 +64,7 @@ public class LCFarming extends JavaPlugin
       "Exp Per Sapling" + this.LCConfiguration.ExpPerSapling, 
       "Exp Per Yellow Flower" + this.LCConfiguration.ExpPerYellowFlower, 
       "Exp Per Red Flower" + this.LCConfiguration.ExpPerRedRose, 
-      "Exp Per Mushroom" + this.LCConfiguration.ExpPerMushroom, 
-      "Exp Per Nether Wart" + this.LCConfiguration.ExpPerNetherWart, };
+      "Exp Per Mushroom" + this.LCConfiguration.ExpPerMushroom,  };
 
     getConfiguration().setProperty("LevelExpPer", Exp);
     getConfiguration().setProperty("LevelUnlocksLevel", UnlocksLevel);

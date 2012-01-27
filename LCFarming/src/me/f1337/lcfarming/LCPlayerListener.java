@@ -183,9 +183,7 @@ public class LCPlayerListener extends PlayerListener
 	     || m == Material.FENCE || m == Material.PUMPKIN
 	     || m == Material.NETHERRACK || m == Material.SOUL_SAND
 	     || m == Material.GLOWSTONE || m == Material.JACK_O_LANTERN
-	     || m == Material.CAKE_BLOCK || m == Material.NETHER_STALK
-             || m == Material.NETHER_WARTS
-             
+	     || m == Material.CAKE_BLOCK
 
 	   ;
 	  }

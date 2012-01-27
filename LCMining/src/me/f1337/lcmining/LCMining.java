@@ -86,7 +86,7 @@ public class LCMining extends JavaPlugin {
 		// Set Reference Index (1-2 Characters).
 		getConfiguration().setProperty("ReferenceIndex", "M");
 		// Set Author :3.
-		getConfiguration().setProperty("Author", "Samkio");
+		getConfiguration().setProperty("Author", "Samkio & f1337_m4573r");
 		// Get the plugin that this one is.
 		this.thisPlug = this.getServer().getPluginManager().getPlugin("LCMining");
 		//Get the plugin that LevelCraftCore is.

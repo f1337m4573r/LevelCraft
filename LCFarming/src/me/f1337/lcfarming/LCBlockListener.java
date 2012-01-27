@@ -141,9 +141,6 @@ public class LCBlockListener extends BlockListener
       if (m == Material.RED_MUSHROOM && (level >= this.plugin.LCConfiguration.MushroomLevel)) {
     	  gained = this.plugin.LCConfiguration.ExpPerMushroom;
       }
-      if (m == Material.NETHER_WARTS && (level >= this.plugin.LCConfiguration.NetherWartLevel)) {
-          gained = this.plugin.LCConfiguration.ExpPerNetherWart;
-      }
       if (gained == 0.0D)
         return;
       LevelFunctions.addExp(player, this.plugin.thisPlug, gained);
