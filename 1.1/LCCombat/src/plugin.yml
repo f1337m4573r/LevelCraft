@@ -1,0 +1,6 @@
+name: LCCombat
+main: me.f1337.lccombat.LCCombat
+version: 0.1
+description: >
+             LCCombat. The Combat Level for LevelCraftCore.
+commands:

@@ -1,6 +1,0 @@
-name: LCWoodCutting
-main: me.f1337.lcwoodcutting.LCWoodCutting
-version: 0.1
-description: >
-             LCWoodCutting. The WoodCutting Level for LevelCraftCore.
-commands:
